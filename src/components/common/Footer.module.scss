@@ -1,0 +1,31 @@
+@use "@/styles/variables.scss";
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 16px);
+  background-color: variables.$rose;
+  padding: 8px;
+  svg {
+    color: variables.$white;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: variables.$white;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 80px;
+  }
+}

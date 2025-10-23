@@ -1,0 +1,38 @@
+@use "@/styles/variables.scss";
+
+.overlay {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 240px;
+  min-height: 120px;
+  padding: 16px;
+  background-color: variables.$white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.title {
+  color: variables.$pink;
+}
+
+.buttonBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}

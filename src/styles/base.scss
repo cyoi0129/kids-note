@@ -1,0 +1,182 @@
+@use "./variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "Helvetica Neue", "Meiryo UI", Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+h3,
+h4,
+p,
+li,
+dl {
+  color: variables.$black;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$black;
+}
+
+#root {
+  background-color: variables.$white;
+  margin: 0 auto;
+  min-height: 100dvh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+main {
+  padding: 16px 16px 80px;
+  min-height: calc(100vh - 160px);
+  width: calc(100% - 32px);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+select {
+  appearance: none;
+  border: solid 1px variables.$gray;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  height: 40px;
+  border: solid 1px variables.$gray;
+  border-radius: 4px;
+  padding: 0 8px;
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+select {
+  width: 80px;
+}
+input[type="range"] {
+  appearance: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  width: calc(100% - 16px);
+  padding: 0 8px;
+  &::-webkit-slider-runnable-track {
+    background: variables.$beige;
+    height: 8px;
+    border-radius: 8px;
+  }
+  &::-webkit-slider-thumb {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    margin-top: -6px;
+    background-color: variables.$blue;
+    border-radius: 50%;
+  }
+  &::-moz-range-track {
+    background: variables.$beige;
+    height: 8px;
+    border-radius: 8px;
+  }
+  &::-moz-range-thumb {
+    border: none;
+    height: 20px;
+    width: 20px;
+    background-color: variables.$blue;
+    border-radius: 50%;
+  }
+}
+input[type="radio"] {
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+  input[type="radio"],
+  input[type="checkbox"] {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+}
+textarea {
+  border: solid 1px variables.$gray;
+  border-radius: 4px;
+  padding: 8px;
+  &::placeholder {
+    opacity: 0.5;
+  }
+  resize: none;
+}
+.button {
+  cursor: pointer;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: variables.$blue;
+  color: variables.$white;
+  font-size: 16px;
+  font-weight: bold;
+  appearance: none;
+  border: none;
+  border-radius: 8px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  &:disabled {
+    background-color: variables.$gray;
+    cursor: not-allowed;
+  }
+}
+
+.float_button {
+  position: fixed;
+  bottom: 96px;
+  right: 16px;
+  a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$blue;
+    color: variables.$white;
+    font-size: 24px;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  }
+}

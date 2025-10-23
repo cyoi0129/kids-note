@@ -1,0 +1,109 @@
+@use "@/styles/variables.scss";
+
+.title {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.form {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  dt {
+    font-weight: bold;
+  }
+}
+
+.input,
+.textarea {
+  width: calc(100% - 32px);
+  max-width: 480px;
+  margin: 8px 0 16px;
+}
+
+.textarea {
+  height: 80px;
+}
+
+.list {
+  display: flex;
+  gap: 16px;
+  margin: 8px 0 16px;
+}
+
+.image {
+  position: relative;
+  padding: 16px;
+  width: 240px;
+  label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  input {
+    display: none;
+  }
+}
+
+.add {
+  cursor: pointer;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: variables.$cream;
+  color: variables.$black;
+  font-size: 16px;
+  font-weight: bold;
+  appearance: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.action {
+  background-color: variables.$blue;
+  color: variables.$white;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: variables.$pink;
+  color: variables.$white;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview {
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.buttonBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}

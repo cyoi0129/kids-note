@@ -1,0 +1,42 @@
+@use "@/styles/variables.scss";
+
+.title {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.form {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  dt {
+    font-weight: bold;
+  }
+}
+
+.input,
+.textarea,
+.select {
+  width: calc(100% - 32px);
+  max-width: 480px;
+  margin: 8px 0 16px;
+}
+
+.textarea {
+  height: 80px;
+}
+
+.list {
+  display: flex;
+  gap: 16px;
+  margin: 8px 0 16px;
+}
+
+.buttonBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}

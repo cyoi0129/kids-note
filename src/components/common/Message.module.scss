@@ -1,0 +1,18 @@
+@use "@/styles/variables.scss";
+
+.container {
+  margin: 16px;
+}
+
+.message {
+  margin: 32px 0 16px;
+  font-size: 16px;
+}
+
+.link {
+  color: variables.$blue;
+  cursor: pointer;
+  a {
+    color: variables.$blue;
+  }
+}

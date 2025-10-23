@@ -1,0 +1,56 @@
+@use "@/styles/variables.scss";
+
+.container {
+  width: calc(100% - 32px);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  > p {
+    margin-left: 16px;
+    font-size: 14px;
+  }
+  > dl {
+    font-size: 14px;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 340px;
+    gap: 8px 16px;
+    > dt {
+      font-weight: bold;
+      width: 120px;
+    }
+    > dd {
+      width: 200px;
+    }
+  }
+  > ul {
+    margin-left: 16px;
+    font-size: 14px;
+    > li {
+      list-style: disc;
+    }
+  }
+}
+.title {
+  font-size: 16px;
+  margin: 32px 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+.invite {
+  margin: 16px 0 0 16px;
+
+  gap: 4px;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}

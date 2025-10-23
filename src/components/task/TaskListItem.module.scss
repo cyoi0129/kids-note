@@ -1,0 +1,71 @@
+@use "@/styles/variables.scss";
+
+.container {
+  display: flex;
+  gap: 0 8px;
+  align-items: center;
+  border-radius: 4px;
+  a {
+    width: calc(100% - 16px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+  }
+  .check {
+    font-size: 24px;
+    color: variables.$gray;
+    cursor: pointer;
+    .checked {
+      color: variables.$blue;
+    }
+  }
+  &.done {
+    background-color: variables.$gray;
+    .check {
+      visibility: hidden;
+    }
+  }
+}
+
+.title {
+  font-size: 16px;
+}
+
+.description {
+  font-size: 14px;
+  color: variables.$darkGray;
+  width: calc(100% - 16px);
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: 42px;
+}
+
+.meta {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: variables.$gray;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    span {
+      &::before {
+        content: "/";
+        padding-right: 4px;
+      }
+    }
+    svg + span::before {
+      content: none;
+    }
+  }
+}

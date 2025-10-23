@@ -1,0 +1,31 @@
+@use "@/styles/variables.scss";
+
+.container {
+  margin: 8px auto;
+  width: 100%;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.done {
+  button {
+    width: 240px;
+  }
+}

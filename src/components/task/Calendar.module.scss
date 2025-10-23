@@ -1,0 +1,41 @@
+@use "@/styles/variables.scss";
+
+.container {
+  margin: 32px auto 8px;
+  width: 100%;
+}
+
+.calendar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tasks {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.list {
+  margin-left: 16px;
+  li {
+    list-style: disc;
+    &.done {
+      text-decoration: line-through;
+    }
+  }
+}
