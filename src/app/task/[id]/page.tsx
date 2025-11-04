@@ -4,7 +4,7 @@ import { TaskProvider } from "@/services/task/provider";
 export default async function TaskDetail({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string}>;
 }) {
   const { id } = await params;
   const task_id = Number(id);

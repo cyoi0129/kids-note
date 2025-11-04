@@ -1,8 +1,6 @@
 "use client";
 import { type FC, useState, useEffect } from "react";
 import Calendar from "react-calendar";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import "react-calendar/dist/Calendar.css";
 import styles from "./Calendar.module.scss";
 import CalendarTasksComponent from "./CalenderTasks";

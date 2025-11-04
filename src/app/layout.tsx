@@ -3,8 +3,6 @@ import { MockProvider } from "@/services/common/MockProvider";
 import { ServerCookie } from "@/services/common/ServerCookie";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
 import "@/styles/base.scss";
 
 export const metadata: Metadata = {

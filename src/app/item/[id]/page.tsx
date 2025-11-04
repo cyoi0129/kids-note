@@ -4,7 +4,7 @@ import { ItemProvider } from "@/services/item/provider";
 export default async function ItemDetail({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string}>;
 }) {
   const { id } = await params;
   const item_id = Number(id);
